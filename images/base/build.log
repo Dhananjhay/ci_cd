@@ -1,0 +1,678 @@
+#1 [internal] load .dockerignore
+#1 transferring context: 2B done
+#1 DONE 0.0s
+
+#2 [internal] load build definition from Dockerfile
+#2 transferring dockerfile: 1.86kB done
+#2 DONE 0.0s
+
+#3 [internal] load metadata for docker.io/library/ubuntu:22.04
+#3 ...
+
+#4 [auth] library/ubuntu:pull token for registry-1.docker.io
+#4 DONE 0.0s
+
+#3 [internal] load metadata for docker.io/library/ubuntu:22.04
+#3 DONE 7.6s
+
+#5 [internal] load build context
+#5 transferring context: 6.02kB done
+#5 DONE 0.0s
+
+#6 [ 1/19] FROM docker.io/library/ubuntu:22.04@sha256:2b7412e6465c3c7fc5bb21d3e6f1917c167358449fecac8176c6e496e5c1f05f
+#6 resolve docker.io/library/ubuntu:22.04@sha256:2b7412e6465c3c7fc5bb21d3e6f1917c167358449fecac8176c6e496e5c1f05f 0.0s done
+#6 sha256:2b7412e6465c3c7fc5bb21d3e6f1917c167358449fecac8176c6e496e5c1f05f 1.13kB / 1.13kB done
+#6 sha256:02410fbfad7f2842cce3cf7655828424f4f7f6b5105b0016e24f1676f3bd15f5 424B / 424B done
+#6 sha256:e343402cadef796b4f12c2ee20b7346978a42a8d95516619c36c6397c4b0c766 2.32kB / 2.32kB done
+#6 sha256:bfbe77e41a78ee38147c5761aa8bc896d9f6e1e648b23468f294065ffe03c107 0B / 27.35MB 0.1s
+#6 sha256:bfbe77e41a78ee38147c5761aa8bc896d9f6e1e648b23468f294065ffe03c107 2.10MB / 27.35MB 2.7s
+#6 sha256:bfbe77e41a78ee38147c5761aa8bc896d9f6e1e648b23468f294065ffe03c107 4.19MB / 27.35MB 4.8s
+#6 sha256:bfbe77e41a78ee38147c5761aa8bc896d9f6e1e648b23468f294065ffe03c107 6.29MB / 27.35MB 7.1s
+#6 sha256:bfbe77e41a78ee38147c5761aa8bc896d9f6e1e648b23468f294065ffe03c107 8.39MB / 27.35MB 9.1s
+#6 sha256:bfbe77e41a78ee38147c5761aa8bc896d9f6e1e648b23468f294065ffe03c107 10.49MB / 27.35MB 11.4s
+#6 sha256:bfbe77e41a78ee38147c5761aa8bc896d9f6e1e648b23468f294065ffe03c107 12.58MB / 27.35MB 14.4s
+#6 sha256:bfbe77e41a78ee38147c5761aa8bc896d9f6e1e648b23468f294065ffe03c107 14.68MB / 27.35MB 16.3s
+#6 sha256:bfbe77e41a78ee38147c5761aa8bc896d9f6e1e648b23468f294065ffe03c107 16.78MB / 27.35MB 18.4s
+#6 sha256:bfbe77e41a78ee38147c5761aa8bc896d9f6e1e648b23468f294065ffe03c107 18.87MB / 27.35MB 19.8s
+#6 sha256:bfbe77e41a78ee38147c5761aa8bc896d9f6e1e648b23468f294065ffe03c107 20.97MB / 27.35MB 21.1s
+#6 sha256:bfbe77e41a78ee38147c5761aa8bc896d9f6e1e648b23468f294065ffe03c107 23.07MB / 27.35MB 22.6s
+#6 sha256:bfbe77e41a78ee38147c5761aa8bc896d9f6e1e648b23468f294065ffe03c107 25.17MB / 27.35MB 24.3s
+#6 sha256:bfbe77e41a78ee38147c5761aa8bc896d9f6e1e648b23468f294065ffe03c107 27.35MB / 27.35MB 25.6s done
+#6 extracting sha256:bfbe77e41a78ee38147c5761aa8bc896d9f6e1e648b23468f294065ffe03c107
+#6 extracting sha256:bfbe77e41a78ee38147c5761aa8bc896d9f6e1e648b23468f294065ffe03c107 0.6s done
+#6 DONE 26.3s
+
+#7 [ 2/19] WORKDIR /tmp
+#7 DONE 0.3s
+
+#8 [ 3/19] COPY apt-install.sh conda-env-update.sh /usr/local/bin/
+#8 DONE 0.0s
+
+#9 [ 4/19] COPY apt.list .
+#9 DONE 0.0s
+
+#10 [ 5/19] RUN apt-install.sh apt.list
+#10 0.614 Get:1 http://ports.ubuntu.com/ubuntu-ports jammy InRelease [270 kB]
+#10 1.389 Get:2 http://ports.ubuntu.com/ubuntu-ports jammy-updates InRelease [119 kB]
+#10 1.589 Get:3 http://ports.ubuntu.com/ubuntu-ports jammy-backports InRelease [109 kB]
+#10 1.787 Get:4 http://ports.ubuntu.com/ubuntu-ports jammy-security InRelease [110 kB]
+#10 2.010 Get:5 http://ports.ubuntu.com/ubuntu-ports jammy/restricted arm64 Packages [24.2 kB]
+#10 2.025 Get:6 http://ports.ubuntu.com/ubuntu-ports jammy/main arm64 Packages [1758 kB]
+#10 3.253 Get:7 http://ports.ubuntu.com/ubuntu-ports jammy/multiverse arm64 Packages [224 kB]
+#10 4.354 Get:8 http://ports.ubuntu.com/ubuntu-ports jammy/universe arm64 Packages [17.2 MB]
+#10 17.30 Get:9 http://ports.ubuntu.com/ubuntu-ports jammy-updates/restricted arm64 Packages [793 kB]
+#10 18.19 Get:10 http://ports.ubuntu.com/ubuntu-ports jammy-updates/multiverse arm64 Packages [27.8 kB]
+#10 18.19 Get:11 http://ports.ubuntu.com/ubuntu-ports jammy-updates/universe arm64 Packages [1154 kB]
+#10 19.53 Get:12 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 Packages [1183 kB]
+#10 21.15 Get:13 http://ports.ubuntu.com/ubuntu-ports jammy-backports/main arm64 Packages [50.0 kB]
+#10 21.18 Get:14 http://ports.ubuntu.com/ubuntu-ports jammy-backports/universe arm64 Packages [26.2 kB]
+#10 21.21 Get:15 http://ports.ubuntu.com/ubuntu-ports jammy-security/multiverse arm64 Packages [23.4 kB]
+#10 21.24 Get:16 http://ports.ubuntu.com/ubuntu-ports jammy-security/main arm64 Packages [923 kB]
+#10 22.00 Get:17 http://ports.ubuntu.com/ubuntu-ports jammy-security/universe arm64 Packages [893 kB]
+#10 22.72 Get:18 http://ports.ubuntu.com/ubuntu-ports jammy-security/restricted arm64 Packages [785 kB]
+#10 23.32 Fetched 25.7 MB in 23s (1112 kB/s)
+#10 23.32 Reading package lists...
+#10 24.11 Reading package lists...
+#10 24.78 Building dependency tree...
+#10 24.91 Reading state information...
+#10 25.11 procps is already the newest version (2:3.3.17-6ubuntu2).
+#10 25.11 The following additional packages will be installed:
+#10 25.11   alsa-topology-conf alsa-ucm-conf autotools-dev bind9-host bind9-libs
+#10 25.11   binutils binutils-aarch64-linux-gnu binutils-common bsd-mailx bzip2-doc
+#10 25.11   ca-certificates-java cm-super-minimal cmake-data cpio cpp cpp-11
+#10 25.11   cracklib-runtime dbus dh-elpa-helper dirmngr distro-info-data dmsetup
+#10 25.11   dpkg-dev dvisvgm emacs-bin-common emacs-common emacs-el emacsen-common
+#10 25.11   fakeroot file fontconfig fontconfig-config fonts-droid-fallback fonts-lato
+#10 25.11   fonts-lmodern fonts-noto-mono fonts-texgyre fonts-urw-base35 fuse3 g++
+#10 25.11   g++-11 gcc gcc-11 gcc-11-base gfortran-11 ghostscript gir1.2-glib-2.0
+#10 25.11   gir1.2-packagekitglib-1.0 git-man gnupg gnupg-l10n gnupg-utils gpg gpg-agent
+#10 25.11   gpg-wks-client gpg-wks-server gpgconf gpgsm gsfonts hicolor-icon-theme
+#10 25.11   ibverbs-providers imagemagick-6-common imagemagick-6.q16 install-info
+#10 25.11   iso-codes java-common javascript-common jed-common ldap-utils libaacs0
+#10 25.11   libaec0 libalgorithm-diff-perl libalgorithm-diff-xs-perl
+#10 25.11   libalgorithm-merge-perl libaom3 libapache-pom-java libapparmor1
+#10 25.11   libappstream4 libarchive13 libargon2-1 libasan6 libasound2 libasound2-data
+#10 25.11   libass9 libassuan0 libasyncns0 libatomic1 libauthen-sasl-perl
+#10 25.11   libavahi-client3 libavahi-common-data libavahi-common3 libavc1394-0
+#10 25.11   libavcodec58 libavdevice58 libavfilter7 libavformat58 libavutil56
+#10 25.11   libbasicobjects0 libbdplus0 libbinutils libblas3 libbluray2 libboost1.74-dev
+#10 25.11   libbrotli1 libbs2b0 libbsd0 libc-ares2 libc-dev-bin libc-devtools libc6-dev
+#10 25.11   libcaca0 libcaf-openmpi-3 libcairo-gobject2 libcairo2 libcap2-bin libcbor0.8
+#10 25.11   libcc1-0 libcdio-cdda2 libcdio-paranoia2 libcdio19 libcfitsio-doc
+#10 25.11   libcfitsio9 libchromaprint1 libclone-perl
+#10 25.11   libcmark-gfm-extensions0.29.0.gfm.3 libcmark-gfm0.29.0.gfm.3 libcoarrays-dev
+#10 25.11   libcoarrays-openmpi-dev libcodec2-1.0 libcollection4 libcommons-logging-java
+#10 25.11   libcommons-parent-java libcrack2 libcrypt-dev libcryptsetup12 libctf-nobfd0
+#10 25.11   libctf0 libcups2 libcurl3-gnutls libcurl4 libdata-dump-perl libdatrie1
+#10 25.11   libdav1d5 libdbus-1-3 libdc1394-25 libde265-0 libdecor-0-0
+#10 25.11   libdecor-0-plugin-1-cairo libdeflate0 libdevmapper1.02.1 libdhash1
+#10 25.11   libdjvulibre-text libdjvulibre21 libdpkg-perl libdrm-amdgpu1 libdrm-common
+#10 25.11   libdrm-nouveau2 libdrm-radeon1 libdrm2 libdw1 libedit2 libelf1
+#10 25.11   libencode-locale-perl liberror-perl libevent-2.1-7 libevent-core-2.1-7
+#10 25.11   libevent-dev libevent-extra-2.1-7 libevent-openssl-2.1-7
+#10 25.11   libevent-pthreads-2.1-7 libexpat1 libfabric1 libfakeroot libfftw3-double3
+#10 25.11   libfido2-1 libfile-basedir-perl libfile-desktopentry-perl
+#10 25.11   libfile-fcntllock-perl libfile-listing-perl libfile-mimeinfo-perl libfl-dev
+#10 25.11   libfl2 libflac8 libflite1 libfont-afm-perl libfontbox-java libfontconfig1
+#10 25.11   libfontenc1 libfreetype6 libfribidi0 libfuse3-3 libgbm1 libgcc-11-dev libgd3
+#10 25.11   libgdbm-compat4 libgdbm6 libgdk-pixbuf-2.0-0 libgdk-pixbuf2.0-bin
+#10 25.11   libgdk-pixbuf2.0-common libgfortran-11-dev libgfortran5
+#10 25.11   libgirepository-1.0-1 libgl1 libgl1-amber-dri libgl1-mesa-dri libglapi-mesa
+#10 25.11   libglib2.0-0 libglib2.0-bin libglib2.0-data libglvnd0 libglx-mesa0 libglx0
+#10 25.11   libgme0 libgomp1 libgpm2 libgraphite2-3 libgs9 libgs9-common libgsm1
+#10 25.11   libgstreamer1.0-0 libharfbuzz0b libhdf5-103-1 libhdf5-hl-100 libheif1
+#10 25.11   libhtml-form-perl libhtml-format-perl libhtml-parser-perl
+#10 25.11   libhtml-tagset-perl libhtml-tree-perl libhttp-cookies-perl
+#10 25.11   libhttp-daemon-perl libhttp-date-perl libhttp-message-perl
+#10 25.11   libhttp-negotiate-perl libhwasan0 libhwloc-dev libhwloc-plugins libhwloc15
+#10 25.11   libibverbs-dev libibverbs1 libice6 libicu70 libidn12 libiec61883-0
+#10 25.11   libijs-0.35 libilmbase25 libini-config5 libio-html-perl
+#10 25.11   libio-socket-ssl-perl libio-stringy-perl libip4tc2 libipa-hbac0
+#10 25.11   libipc-system-simple-perl libisl23 libitm1 libjack-jackd2-0 libjansson4
+#10 25.11   libjbig0 libjbig2dec0 libjpeg-turbo8 libjpeg8 libjq1 libjs-jquery
+#10 25.11   libjs-jquery-ui libjson-c5 libjsoncpp25 libjxr-tools libjxr0 libkmod2
+#10 25.11   libkpathsea6 libksba8 liblapack3 liblcms2-2 libldap-2.5-0 libldap-common
+#10 25.11   libldb2 liblilv-0-0 libllvm15 liblmdb0 liblocale-gettext-perl
+#10 25.11   liblockfile-bin liblockfile1 liblqr-1-0 liblsan0 libltdl-dev libltdl7
+#10 25.11   liblwp-mediatypes-perl liblwp-protocol-https-perl liblzo2-2 libmagic-mgc
+#10 25.11   libmagic1 libmagickcore-6.q16-6 libmagickcore-6.q16-6-extra
+#10 25.11   libmagickwand-6.q16-6 libmailtools-perl libmaxminddb0 libmd0 libmp3lame0
+#10 25.11   libmpc3 libmpdec3 libmpfr6 libmpg123-0 libmysofa1 libnet-dbus-perl
+#10 25.11   libnet-http-perl libnet-smtp-ssl-perl libnet-ssleay-perl libnetpbm10
+#10 25.11   libnfsidmap1 libnghttp2-14 libnl-3-200 libnl-3-dev libnl-genl-3-200
+#10 25.11   libnl-route-3-200 libnl-route-3-dev libnorm1 libnpth0 libnsl-dev libnspr4
+#10 25.11   libnss-sss libnss-systemd libnss3 libnuma-dev libnuma1 libogg0 libonig5
+#10 25.11   libopenal-data libopenal1 libopenexr25 libopenjp2-7 libopenmpi3 libopenmpt0
+#10 25.11   libopus0 libpackagekit-glib2-18 libpam-cap libpam-pwquality libpam-sss
+#10 25.11   libpam-systemd libpango-1.0-0 libpangocairo-1.0-0 libpangoft2-1.0-0
+#10 25.11   libpaper-utils libpaper1 libpath-utils1 libpciaccess0 libpcsclite1
+#10 25.11   libpdfbox-java libperl5.34 libpgm-5.3-0 libpixman-1-0 libpmix-dev libpmix2
+#10 25.11   libpng16-16 libpocketsphinx3 libpolkit-agent-1-0 libpolkit-gobject-1-0
+#10 25.11   libpopt0 libpostproc55 libpsl5 libptexenc1 libpulse0 libpwquality-common
+#10 25.11   libpwquality1 libpython3-stdlib libpython3.10 libpython3.10-minimal
+#10 25.11   libpython3.10-stdlib librabbitmq4 libraw1394-11 librdmacm1 libreadline8
+#10 25.11   libref-array1 librhash0 librsvg2-2 librsvg2-common librtmp1 librubberband2
+#10 25.11   libruby3.0 libsamplerate0 libsasl2-2 libsasl2-modules libsasl2-modules-db
+#10 25.11   libsasl2-modules-gssapi-mit libsdl2-2.0-0 libsensors-config libsensors5
+#10 25.11   libserd-0-0 libshine3 libsigsegv2 libslang2 libslang2-modules libsm6
+#10 25.11   libsmbclient libsnappy1v5 libsndfile1 libsndio7.0 libsodium23 libsord-0-0
+#10 25.11   libsoxr0 libspeex1 libsphinxbase3 libsqlite3-0 libsratom-0-0
+#10 25.11   libsrt1.4-gnutls libssh-4 libssh-gcrypt-4 libssh2-1 libsss-certmap0
+#10 25.11   libsss-idmap0 libsss-nss-idmap0 libstd-rust-1.66 libstd-rust-dev
+#10 25.11   libstdc++-11-dev libstemmer0d libswresample3 libswscale5 libsynctex2 libsz2
+#10 25.11   libtalloc2 libtcl8.6 libtdb1 libteckit0 libtevent0 libtexlua53
+#10 25.11   libtext-iconv-perl libthai-data libthai0 libtheora0 libtie-ixhash-perl
+#10 25.11   libtiff5 libtimedate-perl libtirpc-dev libtk8.6 libtry-tiny-perl libtsan0
+#10 25.11   libtwolame0 libubsan1 libucx0 libudfread0 libunwind8 liburi-perl
+#10 25.11   libusb-1.0-0 libutempter0 libuv1 libva-drm2 libva-x11-2 libva2 libvdpau1
+#10 25.11   libvidstab1.1 libvorbis0a libvorbisenc2 libvorbisfile3 libvpx7
+#10 25.11   libwayland-client0 libwayland-cursor0 libwayland-egl1 libwayland-server0
+#10 25.11   libwbclient0 libwebp7 libwebpdemux2 libwebpmux3 libwmflite-0.2-7 libwoff1
+#10 25.11   libwww-perl libwww-robotrules-perl libx11-6 libx11-data libx11-protocol-perl
+#10 25.11   libx11-xcb1 libx264-163 libx265-199 libxau6 libxaw7 libxcb-dri2-0
+#10 25.11   libxcb-dri3-0 libxcb-glx0 libxcb-present0 libxcb-randr0 libxcb-render0
+#10 25.11   libxcb-shape0 libxcb-shm0 libxcb-sync1 libxcb-xfixes0 libxcb1 libxcomposite1
+#10 25.11   libxcursor1 libxdmcp6 libxext6 libxfixes3 libxfont2 libxft2 libxi6
+#10 25.11   libxinerama1 libxkbcommon0 libxkbfile1 libxml-parser-perl libxml-twig-perl
+#10 25.11   libxml-xpathengine-perl libxml2 libxmlb2 libxmu6 libxmuu1 libxnvctrl0
+#10 25.11   libxpm4 libxrandr2 libxrender1 libxshmfence1 libxss1 libxt6 libxtst6 libxv1
+#10 25.11   libxvidcore4 libxxf86dga1 libxxf86vm1 libyaml-0-2 libzimg2 libzmq5
+#10 25.11   libzvbi-common libzvbi0 libzzip-0-13 linux-libc-dev lmodern lsb-release
+#10 25.11   lto-disabled-list m4 mailcap make manpages-dev mc-data media-types
+#10 25.11   mesa-va-drivers mesa-vdpau-drivers mime-support netbase netpbm
+#10 25.11   networkd-dispatcher ocl-icd-libopencl1 openmpi-common openssl packagekit
+#10 25.11   packagekit-tools pandoc-data patch perl perl-modules-5.34
+#10 25.11   perl-openssl-defaults pfb2t1c2pfb pinentry-curses pkexec pocketsphinx-en-us
+#10 25.11   policykit-1 polkitd poppler-data postfix preview-latex-style publicsuffix
+#10 25.11   python-apt-common python3 python3-apt python3-blinker python3-cffi-backend
+#10 25.11   python3-cryptography python3-dbus python3-distro python3-distro-info
+#10 25.11   python3-gi python3-httplib2 python3-importlib-metadata python3-jeepney
+#10 25.11   python3-jwt python3-keyring python3-launchpadlib python3-lazr.restfulclient
+#10 25.11   python3-lazr.uri python3-ldb python3-minimal python3-more-itertools
+#10 25.11   python3-oauthlib python3-pkg-resources python3-psshlib python3-pyparsing
+#10 25.11   python3-secretstorage python3-six python3-software-properties python3-sss
+#10 25.11   python3-talloc python3-wadllib python3-zipp python3.10 python3.10-minimal
+#10 25.11   rake readline-common rpcsvc-proto ruby ruby-net-telnet ruby-rubygems
+#10 25.11   ruby-webrick ruby-xmlrpc ruby3.0 rubygems-integration samba-libs
+#10 25.11   shared-mime-info slsh ssl-cert sssd-ad sssd-ad-common sssd-common sssd-ipa
+#10 25.11   sssd-krb5 sssd-krb5-common sssd-ldap sssd-proxy systemd systemd-sysv
+#10 25.11   systemd-timesyncd t1utils tcl tcl8.6 teckit tex-common tex-gyre texlive-base
+#10 25.11   texlive-binaries texlive-latex-base texlive-latex-extra
+#10 25.11   texlive-latex-recommended texlive-pictures tipa tk tk8.6 ucf
+#10 25.11   unattended-upgrades va-driver-all vdpau-driver-all vim-common vim-runtime
+#10 25.11   wamerican x11-common x11-utils x11-xkb-utils x11-xserver-utils xauth
+#10 25.11   xbitmaps xdg-user-dirs xdg-utils xfonts-base xfonts-encodings xfonts-utils
+#10 25.11   xkb-data xserver-common xxd xz-utils zsh-common
+#10 25.11 Suggested packages:
+#10 25.11   autoconf-archive gnu-standards autoconf-doc gettext binutils-doc bison-doc
+#10 25.11   cmake-doc ninja-build cmake-format libarchive1 cpp-doc gcc-11-locales
+#10 25.11   default-dbus-session-bus | dbus-session-bus dbus-user-session
+#10 25.11   pinentry-gnome3 tor debian-keyring mailutils emacs-common-non-dfsg
+#10 25.11   ncurses-term ffmpeg-doc flex-doc fonts-noto fonts-freefont-otf
+#10 25.11   | fonts-freefont-ttf gcc-11-doc gcc-multilib gdb gcc-doc gfortran-doc
+#10 25.11   gfortran-11-doc ghostscript-x gettext-base git-daemon-run
+#10 25.11   | git-daemon-sysvinit git-doc git-email git-gui gitk gitweb git-cvs
+#10 25.11   git-mediawiki git-svn parcimonie xloadimage scdaemon lm-sensors lsof strace
+#10 25.11   imagemagick-doc autotrace cups-bsd | lpr | lprng enscript gimp gnuplot grads
+#10 25.11   graphviz groff-base hp2xx html2ps libwmf-bin mplayer povray radiance
+#10 25.11   sane-utils transfig ufraw-batch isoquery default-jre apache2 | lighttpd
+#10 25.11   | httpd gpm lrzip libasound2-plugins alsa-utils libdigest-hmac-perl
+#10 25.11   libgssapi-perl libcuda1 libnvcuvid1 libnvidia-encode1 libbluray-bdj
+#10 25.11   libboost-doc libboost1.74-doc libboost-atomic1.74-dev
+#10 25.11   libboost-chrono1.74-dev libboost-container1.74-dev libboost-context1.74-dev
+#10 25.11   libboost-contract1.74-dev libboost-coroutine1.74-dev
+#10 25.11   libboost-date-time1.74-dev libboost-exception1.74-dev libboost-fiber1.74-dev
+#10 25.11   libboost-filesystem1.74-dev libboost-graph1.74-dev
+#10 25.11   libboost-graph-parallel1.74-dev libboost-iostreams1.74-dev
+#10 25.11   libboost-locale1.74-dev libboost-log1.74-dev libboost-math1.74-dev
+#10 25.11   libboost-mpi1.74-dev libboost-mpi-python1.74-dev libboost-numpy1.74-dev
+#10 25.11   libboost-program-options1.74-dev libboost-python1.74-dev
+#10 25.11   libboost-random1.74-dev libboost-regex1.74-dev
+#10 25.11   libboost-serialization1.74-dev libboost-stacktrace1.74-dev
+#10 25.11   libboost-system1.74-dev libboost-test1.74-dev libboost-thread1.74-dev
+#10 25.11   libboost-timer1.74-dev libboost-type-erasure1.74-dev libboost-wave1.74-dev
+#10 25.11   libboost1.74-tools-dev libmpfrc++-dev libntl-dev libboost-nowide1.74-dev
+#10 25.11   glibc-doc libavalon-framework-java libcommons-logging-java-doc
+#10 25.11   libexcalibur-logkit-java liblog4j1.2-java cups-common bzr libeigen3-doc
+#10 25.11   libfftw3-bin libfftw3-dev libgd-tools gdbm-l10n gstreamer1.0-tools jackd2
+#10 25.11   libjs-jquery-ui-docs liblcms2-utils libtool-doc libcrypt-ssleay-perl
+#10 25.11   liblzma-doc inkscape mmdb-bin libportaudio2 openmpi-doc opus-tools pciutils
+#10 25.11   pcscd pulseaudio libraw1394-doc librsvg2-bin libsasl2-modules-ldap
+#10 25.11   libsasl2-modules-otp libsasl2-modules-sql serdi sndiod sordi speex
+#10 25.11   libstdc++-11-doc gcj-jdk libsub-name-perl libbusiness-isbn-perl
+#10 25.11   libauthen-ntlm-perl libunicode-map8-perl libunicode-string-perl
+#10 25.11   xml-twig-tools m4-doc make-doc man-browser arj dbview djvulibre-bin
+#10 25.11   epub-utils genisoimage gv libaspell-dev links | w3m | lynx odt2txt
+#10 25.11   poppler-utils python python-boto python-tz unar wimtools xpdf | pdf-viewer
+#10 25.11   hunspell iw | wireless-tools opencl-icd libnss-mdns fonts-dejavu-extra
+#10 25.11   fonts-ipafont-gothic fonts-ipafont-mincho fonts-wqy-microhei
+#10 25.11   | fonts-wqy-zenhei fonts-indic keychain libpam-ssh monkeysphere ssh-askpass
+#10 25.11   appstream texlive-luatex pandoc-citeproc context wkhtmltopdf groff ghc
+#10 25.11   nodejs php r-base-core libjs-mathjax libjs-katex
+#10 25.11   citation-style-language-styles ash csh fish ksh ed diffutils-doc perl-doc
+#10 25.11   libterm-readline-gnu-perl | libterm-readline-perl-perl
+#10 25.11   libtap-harness-archive-perl pinentry-doc fonts-japanese-mincho
+#10 25.11   | fonts-ipafont-mincho fonts-japanese-gothic | fonts-ipafont-gothic
+#10 25.11   fonts-arphic-ukai fonts-arphic-uming fonts-nanum procmail postfix-mysql
+#10 25.11   postfix-pgsql postfix-ldap postfix-pcre postfix-lmdb postfix-sqlite
+#10 25.11   sasl2-bin | dovecot-common resolvconf postfix-cdb postfix-mta-sts-resolver
+#10 25.11   ufw postfix-doc python3-doc python3-tk python3-venv python3-apt-dbg
+#10 25.11   python-apt-doc python-blinker-doc python-cryptography-doc
+#10 25.11   python3-cryptography-vectors python-dbus-doc python3-crypto gir1.2-secret-1
+#10 25.11   gnome-keyring libkf5wallet-bin python3-keyrings.alt python3-testresources
+#10 25.11   python3-setuptools python-pyparsing-doc python-secretstorage-doc
+#10 25.11   python3.10-venv python3.10-doc binfmt-support readline-doc openssh-server
+#10 25.11   python3-braceexpand ri ruby-dev bundler cargo llvm-15 lld-15 clang-15 byobu
+#10 25.11   | screenie | iselect adcli apparmor libsss-sudo sssd-tools isag
+#10 25.11   systemd-container libtss2-esys-3.0.2-0 libtss2-mu0 libtss2-rc0
+#10 25.11   tcl-tclreadline debhelper perl-tk xzdec texlive-fonts-recommended-doc
+#10 25.11   texlive-latex-base-doc python3-pygments icc-profiles libfile-which-perl
+#10 25.11   libspreadsheet-parseexcel-perl texlive-latex-extra-doc
+#10 25.11   texlive-latex-recommended-doc texlive-pstricks dot2tex prerex
+#10 25.11   texlive-pictures-doc vprerex default-jre-headless tipa-doc needrestart
+#10 25.11   powermgmt-base libvdpau-va-gl1 ctags vim-doc vim-scripts indent mesa-utils
+#10 25.11   nickle cairo-5c xorg-docs-core xfonts-cyrillic zsh-doc
+#10 26.42 The following NEW packages will be installed:
+#10 26.42   acl alsa-topology-conf alsa-ucm-conf apt-utils autoconf automake
+#10 26.42   autotools-dev bash-completion bc bind9-host bind9-libs binutils
+#10 26.42   binutils-aarch64-linux-gnu binutils-common bison bsd-mailx build-essential
+#10 26.42   bzip2 bzip2-doc ca-certificates ca-certificates-java cm-super
+#10 26.42   cm-super-minimal cmake cmake-data cpio cpp cpp-11 cracklib-runtime curl dbus
+#10 26.42   dh-elpa-helper dirmngr distro-info-data dmsetup dpkg-dev dumb-init dvipng
+#10 26.42   dvisvgm emacs-bin-common emacs-common emacs-el emacs-nox emacsen-common
+#10 26.42   fakeroot ffmpeg file fitsverify flex fontconfig fontconfig-config
+#10 26.42   fonts-droid-fallback fonts-lato fonts-liberation fonts-lmodern
+#10 26.42   fonts-noto-mono fonts-texgyre fonts-urw-base35 fpart fuse3 g++ g++-11 gcc
+#10 26.42   gcc-11 gcc-11-base gfortran gfortran-11 ghostscript gir1.2-glib-2.0
+#10 26.42   gir1.2-packagekitglib-1.0 git git-lfs git-man gnupg gnupg-l10n gnupg-utils
+#10 26.42   gpg gpg-agent gpg-wks-client gpg-wks-server gpgconf gpgsm gsfonts hdf5-tools
+#10 26.42   hicolor-icon-theme htop ibverbs-providers imagemagick imagemagick-6-common
+#10 26.42   imagemagick-6.q16 install-info iso-codes java-common javascript-common jed
+#10 26.42   jed-common joe jq ldap-utils less libaacs0 libaec0 libalgorithm-diff-perl
+#10 26.42   libalgorithm-diff-xs-perl libalgorithm-merge-perl libaom3 libapache-pom-java
+#10 26.42   libapparmor1 libappstream4 libarchive-tools libarchive13 libargon2-1
+#10 26.42   libasan6 libasound2 libasound2-data libass9 libassuan0 libasyncns0
+#10 26.42   libatomic1 libauthen-sasl-perl libavahi-client3 libavahi-common-data
+#10 26.42   libavahi-common3 libavc1394-0 libavcodec58 libavdevice58 libavfilter7
+#10 26.42   libavformat58 libavutil56 libbasicobjects0 libbdplus0 libbinutils libblas3
+#10 26.42   libbluray2 libboost-dev libboost1.74-dev libbrotli1 libbs2b0 libbsd0
+#10 26.42   libbz2-dev libc-ares2 libc-dev-bin libc-devtools libc6-dev libcaca0
+#10 26.42   libcaf-openmpi-3 libcairo-gobject2 libcairo2 libcap2-bin libcbor0.8 libcc1-0
+#10 26.42   libcdio-cdda2 libcdio-paranoia2 libcdio19 libcfitsio-bin libcfitsio-dev
+#10 26.42   libcfitsio-doc libcfitsio9 libchromaprint1 libclone-perl
+#10 26.42   libcmark-gfm-extensions0.29.0.gfm.3 libcmark-gfm0.29.0.gfm.3 libcoarrays-dev
+#10 26.42   libcoarrays-openmpi-dev libcodec2-1.0 libcollection4 libcommons-logging-java
+#10 26.42   libcommons-parent-java libcrack2 libcrypt-dev libcryptsetup12 libctf-nobfd0
+#10 26.42   libctf0 libcups2 libcurl3-gnutls libcurl4 libdata-dump-perl libdatrie1
+#10 26.42   libdav1d5 libdbus-1-3 libdc1394-25 libde265-0 libdecor-0-0
+#10 26.42   libdecor-0-plugin-1-cairo libdeflate0 libdevmapper1.02.1 libdhash1
+#10 26.42   libdjvulibre-text libdjvulibre21 libdpkg-perl libdrm-amdgpu1 libdrm-common
+#10 26.42   libdrm-nouveau2 libdrm-radeon1 libdrm2 libdw1 libedit2 libeigen3-dev libelf1
+#10 26.42   libencode-locale-perl liberror-perl libevent-2.1-7 libevent-core-2.1-7
+#10 26.42   libevent-dev libevent-extra-2.1-7 libevent-openssl-2.1-7
+#10 26.42   libevent-pthreads-2.1-7 libexpat1 libfabric1 libfakeroot libfftw3-double3
+#10 26.42   libfido2-1 libfile-basedir-perl libfile-desktopentry-perl
+#10 26.42   libfile-fcntllock-perl libfile-listing-perl libfile-mimeinfo-perl libfl-dev
+#10 26.42   libfl2 libflac8 libflite1 libfont-afm-perl libfontbox-java libfontconfig1
+#10 26.42   libfontenc1 libfreetype6 libfribidi0 libfuse3-3 libgbm1 libgcc-11-dev libgd3
+#10 26.42   libgdbm-compat4 libgdbm6 libgdk-pixbuf-2.0-0 libgdk-pixbuf2.0-bin
+#10 26.42   libgdk-pixbuf2.0-common libgfortran-11-dev libgfortran5
+#10 26.42   libgirepository-1.0-1 libgl1 libgl1-amber-dri libgl1-mesa-dri libglapi-mesa
+#10 26.42   libglib2.0-0 libglib2.0-bin libglib2.0-data libglvnd0 libglx-mesa0 libglx0
+#10 26.42   libgme0 libgomp1 libgpm2 libgraphite2-3 libgs9 libgs9-common libgsm1
+#10 26.42   libgstreamer1.0-0 libharfbuzz0b libhdf5-103-1 libhdf5-hl-100 libheif1
+#10 26.42   libhtml-form-perl libhtml-format-perl libhtml-parser-perl
+#10 26.42   libhtml-tagset-perl libhtml-tree-perl libhttp-cookies-perl
+#10 26.42   libhttp-daemon-perl libhttp-date-perl libhttp-message-perl
+#10 26.42   libhttp-negotiate-perl libhwasan0 libhwloc-dev libhwloc-plugins libhwloc15
+#10 26.42   libibverbs-dev libibverbs1 libice6 libicu70 libidn12 libiec61883-0
+#10 26.42   libijs-0.35 libilmbase25 libini-config5 libio-html-perl
+#10 26.42   libio-socket-ssl-perl libio-stringy-perl libip4tc2 libipa-hbac0
+#10 26.42   libipc-system-simple-perl libisl23 libitm1 libjack-jackd2-0 libjansson4
+#10 26.42   libjbig0 libjbig2dec0 libjpeg-turbo8 libjpeg8 libjq1 libjs-jquery
+#10 26.42   libjs-jquery-ui libjson-c5 libjsoncpp25 libjxr-tools libjxr0 libkmod2
+#10 26.42   libkpathsea6 libksba8 liblapack3 liblcms2-2 libldap-2.5-0 libldap-common
+#10 26.42   libldb2 liblilv-0-0 libllvm15 liblmdb0 liblocale-gettext-perl
+#10 26.42   liblockfile-bin liblockfile1 liblqr-1-0 liblsan0 libltdl-dev libltdl7
+#10 26.42   liblwp-mediatypes-perl liblwp-protocol-https-perl liblzma-dev liblzo2-2
+#10 26.42   libmagic-mgc libmagic1 libmagickcore-6.q16-6 libmagickcore-6.q16-6-extra
+#10 26.42   libmagickwand-6.q16-6 libmailtools-perl libmaxminddb0 libmd0 libmp3lame0
+#10 26.42   libmpc3 libmpdec3 libmpfr6 libmpg123-0 libmysofa1 libnet-dbus-perl
+#10 26.42   libnet-http-perl libnet-smtp-ssl-perl libnet-ssleay-perl libnetpbm10
+#10 26.42   libnfsidmap1 libnghttp2-14 libnl-3-200 libnl-3-dev libnl-genl-3-200
+#10 26.42   libnl-route-3-200 libnl-route-3-dev libnorm1 libnpth0 libnsl-dev libnspr4
+#10 26.42   libnss-sss libnss-systemd libnss3 libnuma-dev libnuma1 libogg0 libonig5
+#10 26.42   libopenal-data libopenal1 libopenexr25 libopenjp2-7 libopenmpi-dev
+#10 26.42   libopenmpi3 libopenmpt0 libopus0 libpackagekit-glib2-18 libpam-cap
+#10 26.42   libpam-pwquality libpam-sss libpam-systemd libpango-1.0-0
+#10 26.42   libpangocairo-1.0-0 libpangoft2-1.0-0 libpaper-utils libpaper1
+#10 26.42   libpath-utils1 libpciaccess0 libpcsclite1 libpdfbox-java libperl5.34
+#10 26.42   libpgm-5.3-0 libpixman-1-0 libpmix-dev libpmix2 libpng16-16 libpocketsphinx3
+#10 26.42   libpolkit-agent-1-0 libpolkit-gobject-1-0 libpopt0 libpostproc55 libpsl5
+#10 26.42   libptexenc1 libpulse0 libpwquality-common libpwquality1 libpython3-stdlib
+#10 26.42   libpython3.10 libpython3.10-minimal libpython3.10-stdlib librabbitmq4
+#10 26.42   libraw1394-11 librdmacm1 libreadline8 libref-array1 librhash0 librsvg2-2
+#10 26.42   librsvg2-common librtmp1 librubberband2 libruby3.0 libsamplerate0 libsasl2-2
+#10 26.42   libsasl2-modules libsasl2-modules-db libsasl2-modules-gssapi-mit
+#10 26.42   libsdl2-2.0-0 libsensors-config libsensors5 libserd-0-0 libshine3
+#10 26.42   libsigsegv2 libslang2 libslang2-modules libsm6 libsmbclient libsnappy1v5
+#10 26.42   libsndfile1 libsndio7.0 libsodium23 libsord-0-0 libsoxr0 libspeex1
+#10 26.42   libsphinxbase3 libsqlite3-0 libsratom-0-0 libsrt1.4-gnutls libssh-4
+#10 26.42   libssh-gcrypt-4 libssh2-1 libsss-certmap0 libsss-idmap0 libsss-nss-idmap0
+#10 26.42   libstd-rust-1.66 libstd-rust-dev libstdc++-11-dev libstemmer0d
+#10 26.42   libswresample3 libswscale5 libsynctex2 libsz2 libtalloc2 libtcl8.6 libtdb1
+#10 26.42   libteckit0 libtevent0 libtexlua53 libtext-iconv-perl libthai-data libthai0
+#10 26.42   libtheora0 libtie-ixhash-perl libtiff5 libtimedate-perl libtirpc-dev
+#10 26.42   libtk8.6 libtool libtry-tiny-perl libtsan0 libtwolame0 libubsan1 libucx0
+#10 26.42   libudfread0 libunwind8 liburi-perl libusb-1.0-0 libutempter0 libuv1
+#10 26.42   libva-drm2 libva-x11-2 libva2 libvdpau1 libvidstab1.1 libvorbis0a
+#10 26.42   libvorbisenc2 libvorbisfile3 libvpx7 libwayland-client0 libwayland-cursor0
+#10 26.42   libwayland-egl1 libwayland-server0 libwbclient0 libwebp7 libwebpdemux2
+#10 26.42   libwebpmux3 libwmflite-0.2-7 libwoff1 libwww-perl libwww-robotrules-perl
+#10 26.42   libx11-6 libx11-data libx11-protocol-perl libx11-xcb1 libx264-163
+#10 26.42   libx265-199 libxau6 libxaw7 libxcb-dri2-0 libxcb-dri3-0 libxcb-glx0
+#10 26.42   libxcb-present0 libxcb-randr0 libxcb-render0 libxcb-shape0 libxcb-shm0
+#10 26.42   libxcb-sync1 libxcb-xfixes0 libxcb1 libxcomposite1 libxcursor1 libxdmcp6
+#10 26.42   libxext6 libxfixes3 libxfont2 libxft2 libxi6 libxinerama1 libxkbcommon0
+#10 26.42   libxkbfile1 libxml-parser-perl libxml-twig-perl libxml-xpathengine-perl
+#10 26.42   libxml2 libxmlb2 libxmu6 libxmuu1 libxnvctrl0 libxpm4 libxrandr2 libxrender1
+#10 26.42   libxshmfence1 libxss1 libxt6 libxtst6 libxv1 libxvidcore4 libxxf86dga1
+#10 26.42   libxxf86vm1 libyaml-0-2 libzimg2 libzmq5 libzvbi-common libzvbi0
+#10 26.42   libzzip-0-13 linux-libc-dev lmodern locales lsb-release lto-disabled-list
+#10 26.42   lzop m4 mailcap make manpages manpages-dev mc mc-data media-types
+#10 26.42   mesa-va-drivers mesa-vdpau-drivers mime-support nano net-tools netbase
+#10 26.42   netpbm networkd-dispatcher ocl-icd-libopencl1 openjdk-19-jre-headless
+#10 26.42   openmpi-bin openmpi-common openssh-client openssl packagekit
+#10 26.42   packagekit-tools pandoc pandoc-data parallel patch perl perl-modules-5.34
+#10 26.42   perl-openssl-defaults pfb2t1c2pfb pinentry-curses pkexec pkg-config
+#10 26.42   pocketsphinx-en-us policykit-1 polkitd poppler-data postfix
+#10 26.42   preview-latex-style psmisc pssh publicsuffix python-apt-common
+#10 26.42   python-is-python3 python3 python3-apt python3-blinker python3-cffi-backend
+#10 26.42   python3-cryptography python3-dbus python3-distro python3-distro-info
+#10 26.42   python3-gi python3-httplib2 python3-importlib-metadata python3-jeepney
+#10 26.42   python3-jwt python3-keyring python3-launchpadlib python3-lazr.restfulclient
+#10 26.42   python3-lazr.uri python3-ldb python3-minimal python3-more-itertools
+#10 26.42   python3-oauthlib python3-pkg-resources python3-psshlib python3-pyparsing
+#10 26.42   python3-secretstorage python3-six python3-software-properties python3-sss
+#10 26.42   python3-talloc python3-wadllib python3-zipp python3.10 python3.10-minimal
+#10 26.42   rake rclone readline-common rpcsvc-proto rsync ruby ruby-net-telnet
+#10 26.42   ruby-rubygems ruby-webrick ruby-xmlrpc ruby3.0 rubygems-integration run-one
+#10 26.42   rustc samba-libs screen shared-mime-info slsh software-properties-common
+#10 26.42   sshfs ssl-cert sssd sssd-ad sssd-ad-common sssd-common sssd-ipa sssd-krb5
+#10 26.42   sssd-krb5-common sssd-ldap sssd-proxy sudo sysstat systemd systemd-sysv
+#10 26.42   systemd-timesyncd t1utils tcl tcl8.6 tcsh teckit tex-common tex-gyre
+#10 26.42   texlive-base texlive-binaries texlive-fonts-recommended texlive-latex-base
+#10 26.42   texlive-latex-extra texlive-latex-recommended texlive-pictures
+#10 26.42   texlive-plain-generic texlive-xetex tini tipa tk tk8.6 tmux tree tzdata ucf
+#10 26.42   unattended-upgrades unzip va-driver-all vdpau-driver-all vim vim-common
+#10 26.42   vim-runtime vim-tiny wamerican wget x11-common x11-utils x11-xkb-utils
+#10 26.42   x11-xserver-utils xauth xbitmaps xclip xdg-user-dirs xdg-utils xfonts-base
+#10 26.42   xfonts-encodings xfonts-utils xkb-data xserver-common xterm xvfb xxd
+#10 26.42   xz-utils zip zlib1g-dev zsh zsh-common
+#10 26.75 0 upgraded, 736 newly installed, 0 to remove and 0 not upgraded.
+#10 26.75 Need to get 752 MB of archives.
+#10 26.75 After this operation, 2711 MB of additional disk space will be used.
+#10 26.75 Get:1 http://ports.ubuntu.com/ubuntu-ports jammy/main arm64 install-info arm64 6.8-4build1 [87.2 kB]
+#10 27.28 Get:2 http://ports.ubuntu.com/ubuntu-ports jammy/main arm64 liblocale-gettext-perl arm64 1.07-4build3 [16.9 kB]
+#10 27.31 Get:3 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 libpython3.10-minimal arm64 3.10.12-1~22.04.2 [809 kB]
+#10 28.21 Get:4 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 libexpat1 arm64 2.4.7-1ubuntu0.2 [76.8 kB]
+#10 28.21 Get:5 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 python3.10-minimal arm64 3.10.12-1~22.04.2 [2247 kB]
+#10 29.62 Get:6 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 python3-minimal arm64 3.10.6-1~22.04 [24.3 kB]
+#10 29.62 Get:7 http://ports.ubuntu.com/ubuntu-ports jammy/main arm64 media-types all 7.0.0 [25.5 kB]
+#10 29.63 Get:8 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 perl-modules-5.34 all 5.34.0-3ubuntu1.2 [2977 kB]
+#10 32.12 Get:9 http://ports.ubuntu.com/ubuntu-ports jammy/main arm64 libgdbm6 arm64 1.23-1 [34.1 kB]
+#10 32.14 Get:10 http://ports.ubuntu.com/ubuntu-ports jammy/main arm64 libgdbm-compat4 arm64 1.23-1 [6294 B]
+#10 32.15 Get:11 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 libperl5.34 arm64 5.34.0-3ubuntu1.2 [4726 kB]
+#10 36.12 Get:12 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 perl arm64 5.34.0-3ubuntu1.2 [232 kB]
+#10 36.87 Get:13 http://ports.ubuntu.com/ubuntu-ports jammy/main arm64 mailcap all 3.70+nmu1ubuntu1 [23.8 kB]
+#10 36.88 Get:14 http://ports.ubuntu.com/ubuntu-ports jammy/main arm64 mime-support all 3.66 [3696 B]
+#10 36.88 Get:15 http://ports.ubuntu.com/ubuntu-ports jammy/main arm64 libmpdec3 arm64 2.5.1-2build2 [89.0 kB]
+#10 36.95 Get:16 http://ports.ubuntu.com/ubuntu-ports jammy/main arm64 readline-common all 8.1.2-1 [53.5 kB]
+#10 36.98 Get:17 http://ports.ubuntu.com/ubuntu-ports jammy/main arm64 libreadline8 arm64 8.1.2-1 [153 kB]
+#10 37.07 Get:18 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 libsqlite3-0 arm64 3.37.2-2ubuntu0.1 [636 kB]
+#10 37.99 Get:19 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 libpython3.10-stdlib arm64 3.10.12-1~22.04.2 [1845 kB]
+#10 39.40 Get:20 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 python3.10 arm64 3.10.12-1~22.04.2 [509 kB]
+#10 39.87 Get:21 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 libpython3-stdlib arm64 3.10.6-1~22.04 [6910 B]
+#10 39.87 Get:22 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 python3 arm64 3.10.6-1~22.04 [22.8 kB]
+#10 40.16 Get:23 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 libapparmor1 arm64 3.0.4-2ubuntu2.2 [38.8 kB]
+#10 40.51 Get:24 http://ports.ubuntu.com/ubuntu-ports jammy/main arm64 libargon2-1 arm64 0~20171227-0.3 [18.6 kB]
+#10 40.56 Get:25 http://ports.ubuntu.com/ubuntu-ports jammy/main arm64 libdevmapper1.02.1 arm64 2:1.02.175-2.1ubuntu4 [129 kB]
+#10 40.85 Get:26 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 libjson-c5 arm64 0.15-3~ubuntu1.22.04.2 [32.7 kB]
+#10 40.88 Get:27 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 libcryptsetup12 arm64 2:2.4.3-1ubuntu1.1 [208 kB]
+#10 41.06 Get:28 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 libip4tc2 arm64 1.8.7-1ubuntu5.1 [19.9 kB]
+#10 41.06 Get:29 http://ports.ubuntu.com/ubuntu-ports jammy/main arm64 libkmod2 arm64 29-1ubuntu1 [46.4 kB]
+#10 41.09 Get:30 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 systemd arm64 249.11-0ubuntu3.10 [4423 kB]
+#10 45.33 Get:31 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 systemd-sysv arm64 249.11-0ubuntu3.10 [10.5 kB]
+#10 45.33 Get:32 http://ports.ubuntu.com/ubuntu-ports jammy/main arm64 libpopt0 arm64 1.18-3build1 [28.0 kB]
+#10 45.33 Get:33 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 rsync arm64 3.2.7-0ubuntu0.22.04.2 [429 kB]
+#10 45.68 Get:34 http://ports.ubuntu.com/ubuntu-ports jammy/main arm64 libsigsegv2 arm64 2.13-1ubuntu3 [14.5 kB]
+#10 45.96 Get:35 http://ports.ubuntu.com/ubuntu-ports jammy/main arm64 m4 arm64 1.4.18-5ubuntu2 [196 kB]
+#10 46.42 Get:36 http://ports.ubuntu.com/ubuntu-ports jammy/main arm64 flex arm64 2.6.4-8build2 [297 kB]
+#10 47.13 Get:37 http://ports.ubuntu.com/ubuntu-ports jammy/main arm64 fonts-droid-fallback all 1:6.0.1r16-1.1build1 [1805 kB]
+#10 48.54 Get:38 http://ports.ubuntu.com/ubuntu-ports jammy/main arm64 fonts-lato all 2.0-2.1 [2696 kB]
+#10 50.66 Get:39 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 libgomp1 arm64 12.3.0-1ubuntu1~22.04 [124 kB]
+#10 50.85 Get:40 http://ports.ubuntu.com/ubuntu-ports jammy/main arm64 libfftw3-double3 arm64 3.3.8-2ubuntu8 [326 kB]
+#10 51.32 Get:41 http://ports.ubuntu.com/ubuntu-ports jammy/main arm64 libbrotli1 arm64 1.0.9-2build6 [314 kB]
+#10 51.48 Get:42 http://ports.ubuntu.com/ubuntu-ports jammy/main arm64 libpng16-16 arm64 1.6.37-3build5 [189 kB]
+#10 51.90 Get:43 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 libfreetype6 arm64 2.11.1+dfsg-1ubuntu0.2 [383 kB]
+#10 52.02 Get:44 http://ports.ubuntu.com/ubuntu-ports jammy/main arm64 ucf all 3.0043 [56.1 kB]
+#10 52.35 Get:45 http://ports.ubuntu.com/ubuntu-ports jammy/main arm64 fonts-liberation all 1:1.07.4-11 [822 kB]
+#10 53.81 Get:46 http://ports.ubuntu.com/ubuntu-ports jammy/main arm64 fonts-urw-base35 all 20200910-1 [6367 kB]
+#10 58.11 Get:47 http://ports.ubuntu.com/ubuntu-ports jammy/universe arm64 fonts-texgyre all 20180621-3.1 [10.2 MB]
+#10 65.10 Get:48 http://ports.ubuntu.com/ubuntu-ports jammy/main arm64 fontconfig-config all 2.13.1-4.2ubuntu5 [29.1 kB]
+#10 65.10 Get:49 http://ports.ubuntu.com/ubuntu-ports jammy/main arm64 libfontconfig1 arm64 2.13.1-4.2ubuntu5 [135 kB]
+#10 65.11 Get:50 http://ports.ubuntu.com/ubuntu-ports jammy/universe arm64 libaom3 arm64 3.3.0-1 [1413 kB]
+#10 65.92 Get:51 http://ports.ubuntu.com/ubuntu-ports jammy/universe arm64 libdav1d5 arm64 0.9.2-1 [313 kB]
+#10 66.27 Get:52 http://ports.ubuntu.com/ubuntu-ports jammy/universe arm64 libde265-0 arm64 1.0.8-1 [202 kB]
+#10 66.39 Get:53 http://ports.ubuntu.com/ubuntu-ports jammy/main arm64 libnuma1 arm64 2.0.14-3ubuntu2 [22.4 kB]
+#10 66.63 Get:54 http://ports.ubuntu.com/ubuntu-ports jammy/universe arm64 libx265-199 arm64 3.5-2 [699 kB]
+#10 66.89 Get:55 http://ports.ubuntu.com/ubuntu-ports jammy/universe arm64 libheif1 arm64 1.12.0-2build1 [184 kB]
+#10 67.24 Get:56 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 libjbig0 arm64 2.1-3.1ubuntu0.22.04.1 [29.1 kB]
+#10 67.56 Get:57 http://ports.ubuntu.com/ubuntu-ports jammy/main arm64 libjpeg-turbo8 arm64 2.1.2-0ubuntu1 [129 kB]
+#10 67.87 Get:58 http://ports.ubuntu.com/ubuntu-ports jammy/main arm64 libjpeg8 arm64 8c-2ubuntu10 [2264 B]
+#10 67.87 Get:59 http://ports.ubuntu.com/ubuntu-ports jammy/main arm64 liblcms2-2 arm64 2.12~rc1-2build2 [157 kB]
+#10 68.01 Get:60 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 libglib2.0-0 arm64 2.72.4-0ubuntu2.2 [1432 kB]
+#10 69.37 Get:61 http://ports.ubuntu.com/ubuntu-ports jammy/universe arm64 liblqr-1-0 arm64 0.4.2-2.1 [22.5 kB]
+#10 69.38 Get:62 http://ports.ubuntu.com/ubuntu-ports jammy/main arm64 libltdl7 arm64 2.4.6-15build2 [39.5 kB]
+#10 69.38 Get:63 http://ports.ubuntu.com/ubuntu-ports jammy/main arm64 libopenjp2-7 arm64 2.4.0-6 [155 kB]
+#10 69.39 Get:64 http://ports.ubuntu.com/ubuntu-ports jammy/main arm64 libdeflate0 arm64 1.10-2 [69.1 kB]
+#10 69.39 Get:65 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 libwebp7 arm64 1.2.2-2ubuntu0.22.04.2 [193 kB]
+#10 69.39 Get:66 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 libtiff5 arm64 4.3.0-6ubuntu0.6 [180 kB]
+#10 69.75 Get:67 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 libwebpdemux2 arm64 1.2.2-2ubuntu0.22.04.2 [10.0 kB]
+#10 69.89 Get:68 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 libwebpmux3 arm64 1.2.2-2ubuntu0.22.04.2 [20.9 kB]
+#10 69.96 Get:69 http://ports.ubuntu.com/ubuntu-ports jammy/main arm64 libxau6 arm64 1:1.0.9-1build5 [7624 B]
+#10 70.03 Get:70 http://ports.ubuntu.com/ubuntu-ports jammy/main arm64 libmd0 arm64 1.0.4-1build1 [23.8 kB]
+#10 70.11 Get:71 http://ports.ubuntu.com/ubuntu-ports jammy/main arm64 libbsd0 arm64 0.11.5-1 [43.7 kB]
+#10 70.21 Get:72 http://ports.ubuntu.com/ubuntu-ports jammy/main arm64 libxdmcp6 arm64 1:1.1.3-0ubuntu5 [10.8 kB]
+#10 70.23 Get:73 http://ports.ubuntu.com/ubuntu-ports jammy/main arm64 libxcb1 arm64 1.14-3ubuntu3 [49.0 kB]
+#10 70.30 Get:74 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 libx11-data all 2:1.7.5-1ubuntu0.3 [120 kB]
+#10 70.42 Get:75 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 libx11-6 arm64 2:1.7.5-1ubuntu0.3 [661 kB]
+#10 71.00 Get:76 http://ports.ubuntu.com/ubuntu-ports jammy/main arm64 libxext6 arm64 2:1.3.4-1build1 [31.1 kB]
+#10 71.00 Get:77 http://ports.ubuntu.com/ubuntu-ports jammy/main arm64 libicu70 arm64 70.1-2 [10.5 MB]
+#10 78.96 Get:78 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 libxml2 arm64 2.9.13+dfsg-1ubuntu0.3 [728 kB]
+#10 80.16 Get:79 http://ports.ubuntu.com/ubuntu-ports jammy-updates/universe arm64 imagemagick-6-common all 8:6.9.11.60+dfsg-1.3ubuntu0.22.04.3 [63.6 kB]
+#10 80.20 Get:80 http://ports.ubuntu.com/ubuntu-ports jammy-updates/universe arm64 libmagickcore-6.q16-6 arm64 8:6.9.11.60+dfsg-1.3ubuntu0.22.04.3 [1688 kB]
+#10 82.58 Get:81 http://ports.ubuntu.com/ubuntu-ports jammy-updates/universe arm64 libmagickwand-6.q16-6 arm64 8:6.9.11.60+dfsg-1.3ubuntu0.22.04.3 [284 kB]
+#10 82.63 Get:82 http://ports.ubuntu.com/ubuntu-ports jammy/main arm64 libtalloc2 arm64 2.3.3-2build1 [24.8 kB]
+#10 82.67 Get:83 http://ports.ubuntu.com/ubuntu-ports jammy/main arm64 libtevent0 arm64 0.11.0-1build1 [38.0 kB]
+#10 82.73 Get:84 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 libwbclient0 arm64 2:4.15.13+dfsg-0ubuntu1.5 [268 kB]
+#10 83.04 Get:85 http://ports.ubuntu.com/ubuntu-ports jammy/main arm64 poppler-data all 0.4.11-1 [2171 kB]
+#10 85.98 Get:86 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 libsasl2-modules-db arm64 2.1.27+dfsg2-3ubuntu1.2 [21.1 kB]
+#10 86.00 Get:87 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 libsasl2-2 arm64 2.1.27+dfsg2-3ubuntu1.2 [55.6 kB]
+#10 86.09 Get:88 http://ports.ubuntu.com/ubuntu-ports jammy/main arm64 netbase all 6.3 [12.9 kB]
+#10 87.44 Get:89 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 openssl arm64 3.0.2-0ubuntu1.10 [1164 kB]
+#10 89.26 Get:90 http://ports.ubuntu.com/ubuntu-ports jammy/main arm64 ssl-cert all 1.1.2 [17.4 kB]
+#10 89.28 Get:91 http://ports.ubuntu.com/ubuntu-ports jammy/main arm64 cpio arm64 2.13+dfsg-7 [81.0 kB]
+#10 89.34 Get:92 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 postfix arm64 3.6.4-1ubuntu1.1 [1235 kB]
+#10 90.27 Get:93 http://ports.ubuntu.com/ubuntu-ports jammy/universe arm64 tex-common all 6.17 [33.7 kB]
+#10 90.29 Get:94 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 libavahi-common-data arm64 0.8-5ubuntu5.1 [23.5 kB]
+#10 90.31 Get:95 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 libavahi-common3 arm64 0.8-5ubuntu5.1 [23.3 kB]
+#10 90.33 Get:96 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 libdbus-1-3 arm64 1.12.20-2ubuntu4.1 [187 kB]
+#10 90.46 Get:97 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 libavahi-client3 arm64 0.8-5ubuntu5.1 [27.4 kB]
+#10 90.48 Get:98 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 libcups2 arm64 2.4.1op1-1ubuntu4.7 [263 kB]
+#10 90.62 Get:99 http://ports.ubuntu.com/ubuntu-ports jammy/main arm64 libjansson4 arm64 2.13.1-1.1build3 [33.6 kB]
+#10 90.92 Get:100 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 libldap-2.5-0 arm64 2.5.16+dfsg-0ubuntu0.22.04.1 [181 kB]
+#10 91.61 Get:101 http://ports.ubuntu.com/ubuntu-ports jammy/main arm64 liblmdb0 arm64 0.9.24-1build2 [49.0 kB]
+#10 91.65 Get:102 http://ports.ubuntu.com/ubuntu-ports jammy/main arm64 libtdb1 arm64 1.4.5-2build1 [47.3 kB]
+#10 91.68 Get:103 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 libldb2 arm64 2:2.4.4-0ubuntu0.22.04.2 [153 kB]
+#10 91.81 Get:104 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 libpython3.10 arm64 3.10.12-1~22.04.2 [1886 kB]
+#10 93.15 Get:105 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 python3-ldb arm64 2:2.4.4-0ubuntu0.22.04.2 [41.8 kB]
+#10 93.16 Get:106 http://ports.ubuntu.com/ubuntu-ports jammy/main arm64 python3-talloc arm64 2.3.3-2build1 [12.8 kB]
+#10 93.17 Get:107 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 samba-libs arm64 2:4.15.13+dfsg-0ubuntu1.5 [6176 kB]
+#10 96.94 Get:108 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 libsmbclient arm64 2:4.15.13+dfsg-0ubuntu1.5 [63.5 kB]
+#10 96.97 Get:109 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 apt-utils arm64 2.4.10 [205 kB]
+#10 97.08 Get:110 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 ca-certificates all 20230311ubuntu0.22.04.1 [155 kB]
+#10 97.69 Get:111 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 dbus arm64 1.12.20-2ubuntu4.1 [154 kB]
+#10 98.39 Get:112 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 distro-info-data all 0.52ubuntu0.4 [4986 B]
+#10 98.39 Get:113 http://ports.ubuntu.com/ubuntu-ports jammy/main arm64 dmsetup arm64 2:1.02.175-2.1ubuntu4 [75.8 kB]
+#10 98.56 Get:114 http://ports.ubuntu.com/ubuntu-ports jammy/main arm64 libgirepository-1.0-1 arm64 1.72.0-1 [53.5 kB]
+#10 98.65 Get:115 http://ports.ubuntu.com/ubuntu-ports jammy/main arm64 gir1.2-glib-2.0 arm64 1.72.0-1 [165 kB]
+#10 98.91 Get:116 http://ports.ubuntu.com/ubuntu-ports jammy/main arm64 iso-codes all 4.9.0-1 [3459 kB]
+#10 102.3 Get:117 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 less arm64 590-1ubuntu0.22.04.1 [142 kB]
+#10 102.4 Get:118 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 libcap2-bin arm64 1:2.44-1ubuntu0.22.04.1 [25.5 kB]
+#10 102.4 Get:119 http://ports.ubuntu.com/ubuntu-ports jammy/main arm64 libelf1 arm64 0.186-1build1 [50.7 kB]
+#10 102.4 Get:120 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 libfribidi0 arm64 1.0.8-2ubuntu3.1 [26.4 kB]
+#10 102.6 Get:121 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 libglib2.0-data all 2.72.4-0ubuntu2.2 [4612 B]
+#10 102.8 Get:122 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 libnss-systemd arm64 249.11-0ubuntu3.10 [133 kB]
+#10 103.4 Get:123 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 libpam-cap arm64 1:2.44-1ubuntu0.22.04.1 [7968 B]
+#10 103.4 Get:124 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 libpam-systemd arm64 249.11-0ubuntu3.10 [205 kB]
+#10 103.6 Get:125 http://ports.ubuntu.com/ubuntu-ports jammy/main arm64 libslang2 arm64 2.3.2-5build4 [442 kB]
+#10 104.0 Get:126 http://ports.ubuntu.com/ubuntu-ports jammy/main arm64 libtext-iconv-perl arm64 1.7-7build3 [14.0 kB]
+#10 104.0 Get:127 http://ports.ubuntu.com/ubuntu-ports jammy/main arm64 libyaml-0-2 arm64 0.2.2-1build2 [51.0 kB]
+#10 104.0 Get:128 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 locales all 2.35-0ubuntu3.4 [4245 kB]
+#10 107.3 Get:129 http://ports.ubuntu.com/ubuntu-ports jammy/main arm64 lsb-release all 11.1.0ubuntu4 [10.8 kB]
+#10 107.3 Get:130 http://ports.ubuntu.com/ubuntu-ports jammy/main arm64 python3-dbus arm64 1.2.18-3build1 [98.5 kB]
+#10 107.3 Get:131 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 python3-gi arm64 3.42.1-0ubuntu1 [228 kB]
+#10 107.3 Ign:131 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 python3-gi arm64 3.42.1-0ubuntu1
+#10 107.6 Get:132 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 networkd-dispatcher all 2.1-2ubuntu0.22.04.2 [15.8 kB]
+#10 107.7 Get:133 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 python-apt-common all 2.4.0ubuntu2 [14.8 kB]
+#10 107.7 Get:134 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 python3-apt arm64 2.4.0ubuntu2 [161 kB]
+#10 108.1 Get:135 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 python3-pkg-resources all 59.6.0-1.2ubuntu0.22.04.1 [132 kB]
+#10 108.2 Get:136 http://ports.ubuntu.com/ubuntu-ports jammy/main arm64 shared-mime-info arm64 2.1-2 [453 kB]
+#10 108.9 Get:137 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 sudo arm64 1.9.9-1ubuntu2.4 [807 kB]
+#10 109.6 Get:138 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 systemd-timesyncd arm64 249.11-0ubuntu3.10 [29.9 kB]
+#10 109.6 Get:139 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 tzdata all 2023c-0ubuntu0.22.04.2 [349 kB]
+#10 109.7 Get:140 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 xxd arm64 2:8.2.3995-1ubuntu2.12 [53.8 kB]
+#10 109.7 Get:141 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 vim-common all 2:8.2.3995-1ubuntu2.12 [81.5 kB]
+#10 109.7 Get:142 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 vim-tiny arm64 2:8.2.3995-1ubuntu2.12 [680 kB]
+#10 110.4 Get:143 http://ports.ubuntu.com/ubuntu-ports jammy/main arm64 xdg-user-dirs arm64 0.17-2ubuntu4 [53.5 kB]
+#10 110.8 Get:144 http://ports.ubuntu.com/ubuntu-ports jammy/main arm64 xkb-data all 2.33-1 [394 kB]
+#10 111.3 Get:145 http://ports.ubuntu.com/ubuntu-ports jammy/main arm64 bash-completion all 1:2.11-5ubuntu1 [180 kB]
+#10 111.6 Get:146 http://ports.ubuntu.com/ubuntu-ports jammy/main arm64 libmaxminddb0 arm64 1.5.2-1build2 [24.9 kB]
+#10 111.6 Get:147 http://ports.ubuntu.com/ubuntu-ports jammy/main arm64 libnghttp2-14 arm64 1.43.0-1build3 [75.4 kB]
+#10 111.6 Get:148 http://ports.ubuntu.com/ubuntu-ports jammy/main arm64 libuv1 arm64 1.43.0-1 [89.9 kB]
+#10 111.7 Get:149 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 bind9-libs arm64 1:9.18.12-0ubuntu0.22.04.3 [1199 kB]
+#10 112.5 Get:150 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 bind9-host arm64 1:9.18.12-0ubuntu0.22.04.3 [51.9 kB]
+#10 112.6 Get:151 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 libmagic-mgc arm64 1:5.41-3ubuntu0.1 [257 kB]
+#10 113.1 Get:152 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 libmagic1 arm64 1:5.41-3ubuntu0.1 [85.0 kB]
+#10 113.1 Get:153 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 file arm64 1:5.41-3ubuntu0.1 [21.6 kB]
+#10 113.4 Get:154 http://ports.ubuntu.com/ubuntu-ports jammy/main arm64 libfuse3-3 arm64 3.10.5-1build1 [79.4 kB]
+#10 113.9 Get:155 http://ports.ubuntu.com/ubuntu-ports jammy/main arm64 fuse3 arm64 3.10.5-1build1 [24.3 kB]
+#10 114.0 Get:156 http://ports.ubuntu.com/ubuntu-ports jammy/main arm64 libcbor0.8 arm64 0.8.0-2ubuntu1 [24.3 kB]
+#10 114.1 Get:157 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 libdrm-common all 2.4.113-2~ubuntu0.22.04.1 [5450 B]
+#10 114.1 Get:158 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 libdrm2 arm64 2.4.113-2~ubuntu0.22.04.1 [39.1 kB]
+#10 114.1 Get:159 http://ports.ubuntu.com/ubuntu-ports jammy/main arm64 libedit2 arm64 3.1-20210910-1build1 [96.0 kB]
+#10 114.3 Get:160 http://ports.ubuntu.com/ubuntu-ports jammy/main arm64 libfido2-1 arm64 1.10.0-1 [81.8 kB]
+#10 114.3 Get:161 http://ports.ubuntu.com/ubuntu-ports jammy/main arm64 libpsl5 arm64 0.21.0-1.2build2 [58.3 kB]
+#10 114.4 Get:162 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 libusb-1.0-0 arm64 2:1.0.25-1ubuntu2 [52.1 kB]
+#10 114.5 Get:163 http://ports.ubuntu.com/ubuntu-ports jammy/main arm64 libxmuu1 arm64 2:1.1.3-3 [10.4 kB]
+#10 114.8 Get:164 http://ports.ubuntu.com/ubuntu-ports jammy/main arm64 manpages all 5.10-1ubuntu1 [1375 kB]
+#10 115.8 Get:165 http://ports.ubuntu.com/ubuntu-ports jammy/main arm64 nano arm64 6.2-1 [277 kB]
+#10 116.6 Get:166 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 openssh-client arm64 1:8.9p1-3ubuntu0.4 [862 kB]
+#10 117.5 Get:167 http://ports.ubuntu.com/ubuntu-ports jammy/main arm64 psmisc arm64 23.4-2build3 [118 kB]
+#10 117.5 Get:168 http://ports.ubuntu.com/ubuntu-ports jammy/main arm64 publicsuffix all 20211207.1025-1 [129 kB]
+#10 117.5 Get:169 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 python3-distro-info all 1.1ubuntu0.1 [6952 B]
+#10 117.5 Get:170 http://ports.ubuntu.com/ubuntu-ports jammy/main arm64 wget arm64 1.21.2-2ubuntu1 [364 kB]
+#10 117.5 Get:171 http://ports.ubuntu.com/ubuntu-ports jammy/main arm64 xauth arm64 1:1.1-1build2 [26.8 kB]
+#10 117.5 Get:172 http://ports.ubuntu.com/ubuntu-ports jammy/main arm64 xz-utils arm64 5.2.5-2ubuntu1 [84.4 kB]
+#10 117.5 Get:173 http://ports.ubuntu.com/ubuntu-ports jammy/main arm64 acl arm64 2.3.1-1 [38.6 kB]
+#10 117.5 Get:174 http://ports.ubuntu.com/ubuntu-ports jammy/main arm64 alsa-topology-conf all 1.2.5.1-2 [15.5 kB]
+#10 117.5 Get:175 http://ports.ubuntu.com/ubuntu-ports jammy/main arm64 libasound2-data all 1.2.6.1-1ubuntu1 [19.1 kB]
+#10 117.8 Get:176 http://ports.ubuntu.com/ubuntu-ports jammy/main arm64 libasound2 arm64 1.2.6.1-1ubuntu1 [378 kB]
+#10 118.7 Get:177 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 alsa-ucm-conf all 1.2.6.3-1ubuntu1.8 [43.3 kB]
+#10 118.7 Get:178 http://ports.ubuntu.com/ubuntu-ports jammy/main arm64 autoconf all 2.71-2 [338 kB]
+#10 119.3 Get:179 http://ports.ubuntu.com/ubuntu-ports jammy/main arm64 autotools-dev all 20220109.1 [44.9 kB]
+#10 119.3 Get:180 http://ports.ubuntu.com/ubuntu-ports jammy/main arm64 automake all 1:1.16.5-1.3 [558 kB]
+#10 119.9 Get:181 http://ports.ubuntu.com/ubuntu-ports jammy/main arm64 bc arm64 1.07.1-3build1 [85.6 kB]
+#10 119.9 Get:182 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 binutils-common arm64 2.38-4ubuntu2.3 [222 kB]
+#10 119.9 Get:183 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 libbinutils arm64 2.38-4ubuntu2.3 [825 kB]
+#10 120.5 Get:184 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 libctf-nobfd0 arm64 2.38-4ubuntu2.3 [108 kB]
+#10 120.7 Get:185 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 libctf0 arm64 2.38-4ubuntu2.3 [103 kB]
+#10 120.7 Get:186 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 binutils-aarch64-linux-gnu arm64 2.38-4ubuntu2.3 [3230 kB]
+#10 123.4 Get:187 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 binutils arm64 2.38-4ubuntu2.3 [3162 B]
+#10 123.5 Get:188 http://ports.ubuntu.com/ubuntu-ports jammy/main arm64 bison arm64 2:3.8.2+dfsg-1build1 [739 kB]
+#10 124.7 Get:189 http://ports.ubuntu.com/ubuntu-ports jammy/main arm64 liblockfile-bin arm64 1.17-1build2 [11.6 kB]
+#10 124.7 Get:190 http://ports.ubuntu.com/ubuntu-ports jammy/main arm64 liblockfile1 arm64 1.17-1build2 [6948 B]
+#10 124.7 Get:191 http://ports.ubuntu.com/ubuntu-ports jammy/main arm64 bsd-mailx arm64 8.1.2-0.20180807cvs-2build2 [69.1 kB]
+#10 124.7 Get:192 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 libc-dev-bin arm64 2.35-0ubuntu3.4 [19.6 kB]
+#10 124.7 Get:193 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 linux-libc-dev arm64 5.15.0-86.96 [1315 kB]
+#10 125.5 Get:194 http://ports.ubuntu.com/ubuntu-ports jammy/main arm64 libcrypt-dev arm64 1:4.4.27-1 [119 kB]
+#10 125.6 Get:195 http://ports.ubuntu.com/ubuntu-ports jammy/main arm64 rpcsvc-proto arm64 1.4.2-0ubuntu6 [65.4 kB]
+#10 125.7 Get:196 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 libtirpc-dev arm64 1.3.2-2ubuntu0.1 [199 kB]
+#10 125.7 Get:197 http://ports.ubuntu.com/ubuntu-ports jammy/main arm64 libnsl-dev arm64 1.3.0-2build2 [72.1 kB]
+#10 126.0 Get:198 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 libc6-dev arm64 2.35-0ubuntu3.4 [1543 kB]
+#10 127.6 Get:199 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 gcc-11-base arm64 11.4.0-1ubuntu1~22.04 [20.3 kB]
+#10 127.7 Get:200 http://ports.ubuntu.com/ubuntu-ports jammy/main arm64 libisl23 arm64 0.24-2build1 [689 kB]
+#10 128.2 Get:201 http://ports.ubuntu.com/ubuntu-ports jammy/main arm64 libmpfr6 arm64 4.1.0-3build3 [245 kB]
+#10 128.2 Get:202 http://ports.ubuntu.com/ubuntu-ports jammy/main arm64 libmpc3 arm64 1.2.1-2build1 [48.1 kB]
+#10 128.3 Get:203 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 cpp-11 arm64 11.4.0-1ubuntu1~22.04 [9762 kB]
+#10 135.3 Get:204 http://ports.ubuntu.com/ubuntu-ports jammy/main arm64 cpp arm64 4:11.2.0-1ubuntu1 [27.7 kB]
+#10 135.3 Get:205 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 libcc1-0 arm64 12.3.0-1ubuntu1~22.04 [45.0 kB]
+#10 135.3 Get:206 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 libitm1 arm64 12.3.0-1ubuntu1~22.04 [28.4 kB]
+#10 135.3 Get:207 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 libatomic1 arm64 12.3.0-1ubuntu1~22.04 [10.8 kB]
+#10 135.3 Get:208 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 libasan6 arm64 11.4.0-1ubuntu1~22.04 [2234 kB]
+#10 137.2 Get:209 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 liblsan0 arm64 12.3.0-1ubuntu1~22.04 [1035 kB]
+#10 139.0 Get:210 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 libtsan0 arm64 11.4.0-1ubuntu1~22.04 [2235 kB]
+#10 142.1 Get:211 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 libubsan1 arm64 12.3.0-1ubuntu1~22.04 [965 kB]
+#10 143.3 Get:212 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 libhwasan0 arm64 12.3.0-1ubuntu1~22.04 [1117 kB]
+#10 144.6 Get:213 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 libgcc-11-dev arm64 11.4.0-1ubuntu1~22.04 [1146 kB]
+#10 146.2 Get:214 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 gcc-11 arm64 11.4.0-1ubuntu1~22.04 [19.4 MB]
+#10 168.0 Get:215 http://ports.ubuntu.com/ubuntu-ports jammy/main arm64 gcc arm64 4:11.2.0-1ubuntu1 [5128 B]
+#10 168.0 Get:216 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 libstdc++-11-dev arm64 11.4.0-1ubuntu1~22.04 [2088 kB]
+#10 169.6 Get:217 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 g++-11 arm64 11.4.0-1ubuntu1~22.04 [11.1 MB]
+#10 177.5 Get:218 http://ports.ubuntu.com/ubuntu-ports jammy/main arm64 g++ arm64 4:11.2.0-1ubuntu1 [1394 B]
+#10 177.6 Get:219 http://ports.ubuntu.com/ubuntu-ports jammy/main arm64 make arm64 4.3-4.1build1 [177 kB]
+#10 178.0 Get:220 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 libdpkg-perl all 1.21.1ubuntu2.2 [237 kB]
+#10 178.7 Get:221 http://ports.ubuntu.com/ubuntu-ports jammy/main arm64 bzip2 arm64 1.0.8-5build1 [34.6 kB]
+#10 178.7 Get:222 http://ports.ubuntu.com/ubuntu-ports jammy/main arm64 patch arm64 2.7.6-7build2 [105 kB]
+#10 178.8 Get:223 http://ports.ubuntu.com/ubuntu-ports jammy/main arm64 lto-disabled-list all 24 [12.5 kB]
+#10 178.8 Get:224 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 dpkg-dev all 1.21.1ubuntu2.2 [922 kB]
+#10 179.8 Get:225 http://ports.ubuntu.com/ubuntu-ports jammy/main arm64 build-essential arm64 12.9ubuntu3 [4740 B]
+#10 179.8 Get:226 http://ports.ubuntu.com/ubuntu-ports jammy/main arm64 bzip2-doc all 1.0.8-5build1 [500 kB]
+#10 179.8 Get:227 http://ports.ubuntu.com/ubuntu-ports jammy/main arm64 java-common all 0.72build2 [6782 B]
+#10 179.9 Get:228 http://ports.ubuntu.com/ubuntu-ports jammy/main arm64 libnspr4 arm64 2:4.32-3build1 [115 kB]
+#10 179.9 Get:229 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 libnss3 arm64 2:3.68.2-0ubuntu1.2 [1172 kB]
+#10 181.3 Get:230 http://ports.ubuntu.com/ubuntu-ports jammy/main arm64 libgraphite2-3 arm64 1.3.14-1build2 [68.9 kB]
+#10 181.6 Get:231 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 libharfbuzz0b arm64 2.7.4-1ubuntu3.1 [353 kB]
+#10 182.4 Get:232 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 libpcsclite1 arm64 1.9.5-3ubuntu1 [20.0 kB]
+#10 182.5 Get:233 http://ports.ubuntu.com/ubuntu-ports jammy-updates/universe arm64 openjdk-19-jre-headless arm64 19.0.2+7-0ubuntu3~22.04 [49.1 MB]
+#10 230.1 Get:234 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 ca-certificates-java all 20190909ubuntu1.2 [12.1 kB]
+#10 230.1 Get:235 http://ports.ubuntu.com/ubuntu-ports jammy/main arm64 libpaper1 arm64 1.1.28build2 [13.6 kB]
+#10 230.1 Get:236 http://ports.ubuntu.com/ubuntu-ports jammy/main arm64 libpaper-utils arm64 1.1.28build2 [8498 B]
+#10 230.1 Get:237 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 libkpathsea6 arm64 2021.20210626.59705-1ubuntu0.1 [59.8 kB]
+#10 230.2 Get:238 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 libptexenc1 arm64 2021.20210626.59705-1ubuntu0.1 [38.3 kB]
+#10 230.2 Get:239 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 libsynctex2 arm64 2021.20210626.59705-1ubuntu0.1 [54.5 kB]
+#10 230.2 Get:240 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 libtexlua53 arm64 2021.20210626.59705-1ubuntu0.1 [118 kB]
+#10 230.2 Get:241 http://ports.ubuntu.com/ubuntu-ports jammy/main arm64 t1utils arm64 1.41-4build2 [61.5 kB]
+#10 230.6 Get:242 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 libpixman-1-0 arm64 0.40.0-1ubuntu0.22.04.1 [160 kB]
+#10 231.2 Get:243 http://ports.ubuntu.com/ubuntu-ports jammy/main arm64 libxcb-render0 arm64 1.14-3ubuntu3 [16.2 kB]
+#10 231.2 Get:244 http://ports.ubuntu.com/ubuntu-ports jammy/main arm64 libxcb-shm0 arm64 1.14-3ubuntu3 [5848 B]
+#10 231.2 Get:245 http://ports.ubuntu.com/ubuntu-ports jammy/main arm64 libxrender1 arm64 1:0.9.10-1build4 [18.8 kB]
+#10 231.2 Get:246 http://ports.ubuntu.com/ubuntu-ports jammy/main arm64 libcairo2 arm64 1.16.0-5ubuntu2 [613 kB]
+#10 232.0 Get:247 http://ports.ubuntu.com/ubuntu-ports jammy/universe arm64 libteckit0 arm64 2.5.11+ds1-1 [409 kB]
+#10 232.0 Get:248 http://ports.ubuntu.com/ubuntu-ports jammy/main arm64 x11-common all 1:7.7+23ubuntu2 [23.4 kB]
+#10 232.0 Get:249 http://ports.ubuntu.com/ubuntu-ports jammy/main arm64 libice6 arm64 2:1.0.10-1build2 [41.7 kB]
+#10 232.0 Get:250 http://ports.ubuntu.com/ubuntu-ports jammy/main arm64 libsm6 arm64 2:1.2.3-1build2 [16.1 kB]
+#10 232.1 Get:251 http://ports.ubuntu.com/ubuntu-ports jammy/main arm64 libxt6 arm64 1:1.2.1-1 [171 kB]
+#10 232.2 Get:252 http://ports.ubuntu.com/ubuntu-ports jammy/main arm64 libxmu6 arm64 2:1.1.3-3 [48.9 kB]
+#10 232.8 Get:253 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 libxpm4 arm64 1:3.5.12-1ubuntu0.22.04.2 [35.5 kB]
+#10 233.1 Get:254 http://ports.ubuntu.com/ubuntu-ports jammy/main arm64 libxaw7 arm64 2:1.0.14-1 [184 kB]
+#10 233.5 Get:255 http://ports.ubuntu.com/ubuntu-ports jammy/main arm64 libxi6 arm64 2:1.8-1build1 [31.6 kB]
+#10 233.5 Get:256 http://ports.ubuntu.com/ubuntu-ports jammy/universe arm64 libzzip-0-13 arm64 0.13.72+dfsg.1-1.1 [26.6 kB]
+#10 233.5 Get:257 http://ports.ubuntu.com/ubuntu-ports jammy-updates/universe arm64 texlive-binaries arm64 2021.20210626.59705-1ubuntu0.1 [8409 kB]
+#10 242.0 Get:258 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 xdg-utils all 1.1.3-4.1ubuntu3~22.04.1 [61.9 kB]
+#10 242.0 Get:259 http://ports.ubuntu.com/ubuntu-ports jammy/universe arm64 texlive-base all 2021.20220204-1 [21.0 MB]
+#10 254.2 Get:260 http://ports.ubuntu.com/ubuntu-ports jammy/universe arm64 fonts-lmodern all 2.004.5-6.1 [4532 kB]
+#10 257.0 Get:261 http://ports.ubuntu.com/ubuntu-ports jammy/universe arm64 texlive-latex-base all 2021.20220204-1 [1128 kB]
+#10 257.6 Get:262 http://ports.ubuntu.com/ubuntu-ports jammy/universe arm64 texlive-latex-recommended all 2021.20220204-1 [14.4 MB]
+#10 268.7 Get:263 http://ports.ubuntu.com/ubuntu-ports jammy/universe arm64 cm-super-minimal all 0.3.4-17 [5777 kB]

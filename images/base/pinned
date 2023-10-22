@@ -1,0 +1,6 @@
+libblas * *mkl*
+libcblas * *mkl*
+liblapack * *mkl*
+liblapacke * *mkl*
+numexpr * *mkl*
+python %PYTHON_VERSION%.*

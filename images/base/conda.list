@@ -1,0 +1,16 @@
+conda-lock
+conda-libmamba-solver
+libblas=*=*mkl*
+libcblas=*=*mkl*
+liblapack=*=*mkl*
+liblapacke=*=*mkl*
+numexpr=*=*mkl*
+numpy<1.25
+openblas
+pip
+pip-tools
+pipenv
+pixi
+poetry
+python=%PYTHON_VERSION%.*
+scipy
