@@ -1,6 +1,6 @@
 ARG BASE_CONTAINER=ubuntu:22.04
 
-FROM ${BASE_CONTAINER}
+FROM --platform=linux/amd64 ${BASE_CONTAINER}
 
 LABEL maintainer="CANFAR Project <support@canfar.net>"
 
